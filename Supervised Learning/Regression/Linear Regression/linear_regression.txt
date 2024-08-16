@@ -210,3 +210,4 @@ This equation predicts the exam score based on the hours studied.
 - The slope \(m\) shows how much \(y\) changes for each unit of \(x\).
 - The intercept \(c\) shows where the line crosses the y-axis when \(x = 0\).
 - Both are calculated using the least squares method to minimize the total error in predictions.
+
