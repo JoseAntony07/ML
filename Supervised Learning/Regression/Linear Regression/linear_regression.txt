@@ -1,0 +1,73 @@
+### **What is Linear Regression?**
+
+- Linear regression is a basic yet powerful statistical method used to understand the relationship between two variables.
+  It predicts a target variable (dependent variable) based on one or more input variables (independent variables).
+  The idea is to find the best-fitting straight line (linear relationship) that minimizes the differences (errors)
+  between actual data points and the predicted values on this line.
+
+### **How Does Linear Regression Work?**
+
+- In simple terms, linear regression works by fitting a line to the data that represents the relationship between the
+  input variable(s) and the output variable. The equation of the line is:
+
+\[
+y = mx + c
+\]
+
+Where:
+- \( y \) is the predicted value (dependent variable).
+- \( x \) is the input feature (independent variable).
+- \( m \) is the slope of the line (indicates how much \( y \) changes with \( x \)).
+- \( c \) is the y-intercept (the value of \( y \) when \( x = 0 \)).
+
+In multiple linear regression, where there are multiple input features, the equation becomes:
+
+\[
+y = w_1x_1 + w_2x_2 + \dots + w_nx_n + b
+\]
+
+Where:
+- \( w_1, w_2, \dots, w_n \) are the coefficients (weights) for each feature.
+- \( b \) is the intercept.
+
+### **Example: Predicting House Prices**
+
+- Suppose you want to predict the price of a house based on its size. You have data on house prices
+  (dependent variable \( y \)) and their corresponding sizes (independent variable \( x \)).
+
+| House Size (sq. ft) | House Price ($) |
+|---------------------|-----------------|
+| 1,000               | 200,000         |
+| 1,500               | 300,000         |
+| 2,000               | 400,000         |
+| 2,500               | 500,000         |
+
+- You can plot this data on a graph with house size on the x-axis and house price on the y-axis.
+- Linear regression will find the best-fitting line that represents the relationship between house size and price.
+
+The equation might look like:
+
+\[
+\text{House Price} = 200 \times \text{Size (sq. ft)} + 0
+\]
+
+Here, the slope \( m = 200 \) indicates that for every additional square foot, the house price increases by $200.
+
+### **When to Use Linear Regression**
+
+Linear regression is useful when:
+
+1. **There is a linear relationship** between the independent variable(s) and the dependent variable.
+2. **You want to predict** a continuous value (like house prices, temperature, etc.).
+3. **You need interpretability**: The coefficients tell you the impact of each independent variable on the dependent variable.
+
+### **Limitations**
+
+- **Assumes linearity**: It doesn’t work well if the relationship between variables is not linear.
+- **Sensitive to outliers**: Extreme values can skew the results.
+- **Correlation does not imply causation**: A strong linear relationship doesn't mean one variable causes the other.
+
+### **Summary**
+
+- Linear regression is a fundamental tool for predicting outcomes based on linear relationships. It's simple,
+  interpretable, and widely used in various fields like economics, finance, and the social sciences.
