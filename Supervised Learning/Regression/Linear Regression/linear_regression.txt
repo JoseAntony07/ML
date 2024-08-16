@@ -211,3 +211,82 @@ This equation predicts the exam score based on the hours studied.
 - The intercept \(c\) shows where the line crosses the y-axis when \(x = 0\).
 - Both are calculated using the least squares method to minimize the total error in predictions.
 
+
+Q) which formula used first, give me step by step
+
+### Step-by-Step Explanation of How Linear Regression Works with Least Squares Method
+
+To perform linear regression using the least squares method, we'll go through the steps in the following order:
+
+1. **Calculate the Mean of `x` and `y`.**
+2. **Calculate the Slope (`m`).**
+3. **Calculate the Intercept (`c`).**
+4. **Understand the Sum of Squared Errors (SSE).**
+
+### 1. **Calculate the Mean of `x` and `y`**
+
+The mean of a set of values is the average.
+
+- **Mean of `x`:**
+  \[
+  \bar{x} = \frac{1}{n} \sum_{i=1}^{n} x_i
+  \]
+  This formula sums all the `x` values and then divides by the number of values (`n`).
+
+- **Mean of `y`:**
+  \[
+  \bar{y} = \frac{1}{n} \sum_{i=1}^{n} y_i
+  \]
+  Similarly, this formula sums all the `y` values and divides by the number of values (`n`).
+
+### 2. **Calculate the Slope (`m`)**
+
+The slope (`m`) of the line is found using this formula:
+
+\[
+m = \frac{\sum_{i=1}^{n} (x_i - \bar{x})(y_i - \bar{y})}{\sum_{i=1}^{n} (x_i - \bar{x})^2}
+\]
+
+- **Explanation:**
+  - **Numerator:** The sum of the products of the differences between each `x` value and the mean `x` value, and each `y` value and the mean `y` value.
+  - **Denominator:** The sum of the squared differences between each `x` value and the mean `x` value.
+
+The slope tells us how much `y` changes for a unit change in `x`.
+
+### 3. **Calculate the Intercept (`c`)**
+
+Once the slope (`m`) is found, calculate the intercept (`c`) using:
+
+\[
+c = \bar{y} - m\bar{x}
+\]
+
+- **Explanation:**
+  - The intercept is the value of `y` when `x = 0`.
+
+### 4. **Sum of Squared Errors (SSE)**
+
+The sum of squared errors (SSE) measures how well the line fits the data:
+
+\[
+\text{SSE} = \sum_{i=1}^{n} (y_i - (mx_i + c))^2
+\]
+
+- **Explanation:**
+  - **\( y_i \)** is the actual `y` value.
+  - **\( mx_i + c \)** is the predicted `y` value using the regression line.
+  - The difference \( y_i - (mx_i + c) \) is the error for each data point.
+  - Squaring the error removes negative signs and emphasizes larger errors.
+  - The SSE is the sum of these squared errors for all data points.
+
+### Summary of the Process
+
+1. Calculate the means (\(\bar{x}\) and \(\bar{y}\)).
+2. Use the means to calculate the slope (`m`).
+3. Calculate the intercept (`c`) using the slope.
+4. The SSE shows how well your line fits the data by summing up the squared errors between actual and predicted values.
+
+Final Goal:
+
+- The least squares method minimizes this SSE to find the best-fitting line. When you calculate the slope m and intercept
+c using the least squares formulas, you are finding the line where the SSE is the smallest possible.
