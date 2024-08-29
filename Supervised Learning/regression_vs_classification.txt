@@ -1,0 +1,31 @@
+linear regression
+------------------
+
+- home prices, weather, stock price   -> related to numbers, not one of define categories(i.e. democratic, repulican, independent)
+
+-> predicted value is continuous
+
+
+logistic regression
+--------------------
+
+- email is spam or not                    -> yes or no
+- will customer buy life insurance        -> yes or no
+- which party a person is going to vote for? -> 1.democratic  2.repulican  3.independent
+
+-> predicted value is categorical
+
+-> above type of problem are called classification problem and logistic regression is a technique that is used to solve these classification
+   problem
+
+
+classification types: -> binary classification and multiclass classification
+
+
+1) binary classification -> que: will customer buy life insurance    ans: yes or no
+
+		- only two in response(yes or no)
+
+2) multiclass classification -> que: which party a person is going to vote for?  ans: 1.democratic  2.repulican  3.independent
+
+		- more than two categories(democratic, repulican, independent)
