@@ -29,3 +29,11 @@ classification types: -> binary classification and multiclass classification
 2) multiclass classification -> que: which party a person is going to vote for?  ans: 1.democratic  2.repulican  3.independent
 
 		- more than two categories(democratic, repulican, independent)
+
+3) decision tree classification
+
+        - handling of categorical data, or capturing non-linear relationships is essential.
+        - can be used for both regression and classification
+        - can capture complex and non-linear relationships between features and the target variable
+        - Avoid Decision Trees: When working with very large datasets, complex features, or needing better performance
+          (use Random Forests, Gradient Boosting).
